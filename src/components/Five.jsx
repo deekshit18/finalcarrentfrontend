@@ -61,7 +61,6 @@ function Five() {
       const handleUpload=async()=>{
         const regex= /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
         const{carname,username, email, time, date, days,rate}=Cars
-        setCars({...Cars,rate:carr})
       if(!username||username.length<3||username.length>16||!email||!regex.test(email)||!time||!date||!days||days<1||days>90){
         toast.warning("Please fill the form completely")
       }
